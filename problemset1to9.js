@@ -66,14 +66,15 @@ console.log('testing compareVote',
         { name: 'Bulbasar', votes: 24 }
     ));
 
-compareVotes = function(candidateA, candidateB) {
-return candidateA.voters > candidateB.votes ? candidateA.name : candidateB.name;
-}
+
 
 
 /* 
 Create a function named compareIds. It has two parameters, candidateA and candidateB. Both candidateA and candidateB will be objects that look like this: */
 
+compareVotes = function(candidateA, candidateB) {
+    return candidateA.voters > candidateB.votes ? candidateA.name : candidateB.name;
+    }
 
 
 /*
@@ -84,7 +85,13 @@ Assume all characters in both words use the English alphabet
 Order uppercase letters before lowercase letters
 Return wordA if wordA comes first alphabetically. Return wordB if wordB comes first. Return either wordA or wordB if they are identical strings. */
 
+const comparedAlphabetically = function(wordA, wordB) {
+    return wordA < wordB ? wordA : wordB;
+}
+
 
 /* Create a function named compareValues. It has two parameters, a and b, which will be numbers. Compare a against b. If a is less than b, return -1. If a is equal to b, return 0. If a is greater than b, return 1. */
 
-const compareValues = function()
+const compareValues = function() {
+
+}
